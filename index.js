@@ -1,5 +1,3 @@
-//index.js
-
 const { program } = require("commander");
 
 program
@@ -14,7 +12,6 @@ program.parse();
 const options = program.opts();
 const contacts = require("./contacts");
 
-// TODO: рефакторити
 async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":

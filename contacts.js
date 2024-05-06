@@ -1,5 +1,3 @@
-//contacts.js;
-
 const fs = require("node:fs/promises");
 const path = require("path");
 const { nanoid } = import("nanoid");
