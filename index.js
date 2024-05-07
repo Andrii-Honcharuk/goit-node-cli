@@ -1,4 +1,5 @@
 const { program } = require("commander");
+const contacts = require("./contacts");
 
 program
   .option("-a, --action <type>", "choose action")
@@ -10,7 +11,6 @@ program
 program.parse();
 
 const options = program.opts();
-const contacts = require("./contacts");
 
 async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
